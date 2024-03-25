@@ -133,7 +133,7 @@ bot.action('get_homeworks', async (ctx) => {
 
 console.log(new Date())
 
-cron.schedule('35 13 * * *', async () => {
+cron.schedule('00 21 * * *', async () => {
     try {
         const rows = await getUsersWhoDidNotSubmitHomework();
         for (const row of rows) {
